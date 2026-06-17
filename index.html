@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>TickTrack</title> 
+<link rel="stylesheet" href="style.css"> 
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Profile -->
+    <header class="top-bar">
+
+    <div class="app-info">
+        <h1 class="logo">TickTrack</h1>
+        <p>Plan. Track. Achieve.</p>
+    </div>
+
+    <div class="stats-container">
+
+    <div class="streak" id="streak">
+         5 Day Streak
+    </div>
+
+    <div class="rating" id="rating">
+        ☆ ☆ ☆ ☆ ☆
+    </div>
+
+</div>
+</header>
+   <hr class="header-line">
+
+    <!-- Main Layout -->
+    <div class="dashboard">
+
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+
+            <button class="plan-btn active">Day Plan</button>
+
+            <button class="plan-btn"> Week Plan</button>
+
+            <button class="plan-btn">Month Plan</button>
+
+            <button class="plan-btn"> Year Goals</button>
+
+        </aside>
+
+        <!-- Center Task Area -->
+        <main class="task-section">
+
+            <h2 id="planTitle"> Day Plan</h2>
+
+            <div class="task-input">
+
+                <input
+                    type="text"
+                    placeholder="Add a task..."
+                    id="taskInput"
+                >
+
+                <button id="addTaskBtn">
+                    Add Task
+                </button>
+                <button id="startDayBtn">
+              Start Day
+                </button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+        </main>
+
+        <!-- Right Calendar -->
+        <aside class="calendar-box">
+
+            <h3>📅 Calendar 2026</h3>
+
+            <div class="calendar-grid" id="calendarGrid"></div>
+
+        </aside>
+
+    </div>
+
+
+    <footer class="footer">
+
+    <p>
+        © 2026 TickTrack | Plan. Track. Achieve.
+    </p>
+
+   </footer>
+
+    <script src="script.js"></script>
+
+</body>
